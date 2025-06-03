@@ -1,11 +1,13 @@
-{
-  "name": "granite-3.3-8b",
-  "provider_url": "https://huggingface.co/unsloth/granite-3.3-8b-instruct-GGUF",
-  "license_name": "apache-2.0",
-  "license_url": "apache-2.0",
-  "chat_template": "{% for message in messages %}{% if message['role'] == 'system' %}{{'<|system|>'+ '\n' + message['content'] + '\n'}}{% elif message['role'] == 'user' %}{{'<|user|>' + '\n' + message['content'] + '\n'}}{% elif message['role'] == 'assistant' %}{{'<|assistant|>' + '\n' + message['content'] + '<|endoftext|>' + ('' if loop.last else '\n')}}{% endif %}{% endfor %}",
-  "urls": [
-    "https://huggingface.co/unsloth/granite-3.3-8b-instruct-GGUF/blob/main/granite-3.3-8b-instruct-Q4_K_M.gguf"
-  ],
-  "sha256": "7057b01e68af6819e5273c75cc2d948d48eeaa750962e5eebb4ecf916a910f33"
-}
+[
+  {
+    "name": "granite-3.3-8b",
+    "provider_url": "https://huggingface.co/unsloth/granite-3.3-8b-instruct-GGUF",
+    "license_name": "apache-2.0",
+    "license_url": "apache-2.0",
+    "chat_template": "{% for message in messages %}{% if message['role'] == 'system' %}{{'<|system|>'+ '\n' + message['content'] + '\n'}}{% elif message['role'] == 'user' %}{{'<|user|>' + '\n' + message['content'] + '\n'}}{% elif message['role'] == 'assistant' %}{{'<|assistant|>' + '\n' + message['content'] + '<|endoftext|>' + ('' if loop.last else '\n')}}{% endif %}{% endfor %}",
+    "urls": [
+      "https://huggingface.co/unsloth/granite-3.3-8b-instruct-GGUF/blob/main/granite-3.3-8b-instruct-Q4_K_M.gguf"
+    ],
+    "sha256": "7057b01e68af6819e5273c75cc2d948d48eeaa750962e5eebb4ecf916a910f33"
+  }
+]
